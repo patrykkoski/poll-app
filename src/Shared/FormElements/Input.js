@@ -8,8 +8,11 @@ const Input = props => {
         type={props.type}
         placeholder={props.placeholder}
         onChange={props.changeHandler}
-        className={props.inputClasses}
+        className={`${!props.isValid &&
+          props.isTouched &&
+          "form-input__invalid"} ${props.inputClasses}`}
         value={props.val}
+        onBlur={props.touchHandler}
       />
     ) : (
       <textarea
@@ -17,12 +20,15 @@ const Input = props => {
         placeholder={props.placeholder}
         type={props.type}
         onChange={props.changeHandler}
-        className={props.inputClasses}
+        className={`${!props.isValid &&
+          props.isTouched &&
+          "form-input__invalid"} ${props.inputClasses}`}
         value={props.val}
+        onBlur={props.touchHandler}
       />
     );
 
-  return element;
+  return <>{element}</>;
 };
 
 export default Input;

@@ -15,6 +15,9 @@ const AnswerItem = props => {
           props.changeAnswerHandler(e.target.value, props.id);
         }}
         val={props.text}
+        isValid={props.isValid}
+        touchHandler={() => props.answerTouchHandler(props.id)}
+        isTouched={props.isTouched}
       />
     </li>
   ) : (
@@ -28,6 +31,9 @@ const AnswerItem = props => {
           props.changeAnswerHandler(e.target.value, props.id);
         }}
         val={props.text}
+        isValid={props.isValid}
+        touchHandler={() => props.answerTouchHandler(props.id)}
+        isTouched={props.isTouched}
       />
       <FontAwesomeIcon
         className="new-poll__remove-question"

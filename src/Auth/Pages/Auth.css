@@ -1,0 +1,26 @@
+.auth__sign-up {
+  margin-top: 7rem;
+}
+.auth__title {
+  color: rgb(32, 99, 155);
+  text-align: center;
+}
+.auth__list {
+  list-style-type: none;
+  padding-left: 0;
+}
+.auth__input {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  border: 1px solid lightgray;
+  border-radius: 0.5rem;
+}
+.auth__submit {
+  width: 100%;
+}
+.auth__switch-type {
+  color: gray;
+  margin-left: auto;
+  margin-right: auto;
+}

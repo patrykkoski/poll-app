@@ -16,7 +16,6 @@
 }
 .new-poll__question {
   resize: none;
-  border: 1px solid lightgray;
   border-radius: 0.5rem;
 }
 .new-poll__answer {
@@ -44,4 +43,9 @@
 }
 .new-poll__remove-question:hover {
   color: rgb(211, 76, 76);
+}
+.nav-links__logout-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }

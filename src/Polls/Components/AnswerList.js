@@ -11,6 +11,9 @@ const AnswerList = props => {
         isRemovable={answer.isRemovable}
         changeAnswerHandler={props.changeAnswerHandler}
         removeAnswer={props.removeAnswer}
+        isValid={answer.isValid}
+        isTouched={answer.isTouched}
+        answerTouchHandler={props.answerTouchHandler}
       />
     );
   });
